@@ -1,0 +1,2737 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Alex+Brush&family=Dr+Sugiyama&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**************************** Btn hover Start ***************************/
+.btn {
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.btn-box .icon-wh {
+    width: 25px;
+    height: 25px;
+    border-radius: 2px !important;
+}
+
+.btn-box .btn-primary {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #ff5722;
+    border-radius: 0px;
+    border: 1px double #ff5722;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.btn-box .btn-primary:hover {
+    background-color: #ff5722;
+}
+
+.btn-box .btn-secondary {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #7c65ff;
+    border-radius: 0px;
+    border: 1px double #7c65ff;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.btn-box .btn-secondary:hover {
+    background-color: #7c65ff;
+}
+
+.btn-box .btn-icon {
+    color: #232F3F;
+}
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-right:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+    color: #ff5722 !important;
+}
+
+.hvr-bounce-to-right:hover:after,
+.hvr-bounce-to-right:focus:after,
+.hvr-bounce-to-right:active:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To Right */
+/* Bounce To left */
+.hvr-bounce-to-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-left::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-left:hover,
+.hvr-bounce-to-left:focus,
+.hvr-bounce-to-left:active {
+    color: #7c65ff !important;
+}
+
+.hvr-bounce-to-left:hover::after,
+.hvr-bounce-to-left:focus::after,
+.hvr-bounce-to-left:active::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To left */
+/**************************** Btn hover Close ***************************/
+/********************* loader css start ******************************/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000000;
+}
+
+.overlay .overlayDoor:before,
+.overlay .overlayDoor:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #ff5722;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+    transition-delay: 0.8s;
+}
+
+.overlay .overlayDoor:before {
+    left: 0;
+}
+
+.overlay .overlayDoor:after {
+    right: 0;
+}
+
+.overlay.loaded .overlayDoor:before {
+    left: -50%;
+}
+
+.overlay.loaded .overlayDoor:after {
+    right: -50%;
+}
+
+.overlay.loaded .overlayContent {
+    opacity: 0;
+    margin-top: -15px;
+}
+
+.overlay .overlayContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.loader {
+    width: 128px;
+    height: 128px;
+    border: 3px solid #fff;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    position: relative;
+    animation: spin 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .inner {
+    width: 64px;
+    height: 64px;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spinInner 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinInner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+
+/************************** loader css end ****************************/
+/**************************** Form css Start ***************************/
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #313747;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    opacity: 0.9;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #313747;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    opacity: 0.9;
+}
+
+.form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #313747;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    opacity: 0.9;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #313747;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    opacity: 0.9;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #000 !important;
+}
+
+/* upload-image preview start */
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 0 auto;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 22px;
+    z-index: 1;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input+label {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #7c65ff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input+label:hover {
+    background: #ff5722;
+    border-color: #ff5722;
+}
+
+.avatar-upload .avatar-edit input+label:hover:after {
+    color: #fff;
+}
+
+.avatar-upload .avatar-edit input+label:after {
+    content: "\f303";
+    font-family: "Font Awesome 6 pro";
+    color: #313747;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 900;
+    height: 100%;
+}
+
+.avatar-upload .avatar-preview {
+    display: block;
+    min-width: 180px;
+    max-width: 180px;
+    min-height: 180px;
+    max-height: 180px;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.avatar-upload .avatar-preview>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar-upload .avatar-preview #imagePreview img {
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-upload .avatar-preview .imagePreview img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 180px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 6px solid #ff5722;
+}
+
+/* upload-image preview end */
+
+.input-main {
+    margin: 0 0 18px 0;
+    overflow: hidden;
+}
+
+.input-main p,
+.input-main label {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0 0 3px 0;
+    padding: 0;
+    color: #313747;
+    line-height: 24px;
+}
+
+.input-main p span,
+.input-main label span {
+    color: #FF6B6B;
+}
+
+.input-main .form-group {
+    position: relative;
+}
+
+.input-main .form-group .card-imgs {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: #74769E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.input-main .form-group .card-imgs li img {
+    min-width: 26px;
+    max-width: 26px;
+    min-height: 26px;
+    max-height: 26px;
+    object-fit: contain;
+}
+
+.input-main .form-control.img-bx {
+    padding: 12px 20px 12px 60px;
+}
+
+.input-main.rightOne .form-control.img-bx {
+    padding: 12px 60px 12px 12px;
+}
+
+.input-main.rightOne .form-group .card-imgs {
+    right: 20px;
+    left: inherit;
+}
+
+.input-main .form-select,
+.input-main .form-control {
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid var(--Light-Grey, #D2D2D2);
+    border-radius: 5px;
+    padding: 8px 30px 8px 17px;
+    color: #232F3F;
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+}
+
+.input-main .form-group .field-icon1 {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #313747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.input-main .form-group .field-icon1.fa-eye:before,
+.input-main .form-group .field-icon1.fa-eye-slash:before {
+    font-family: "Font Awesome 6 pro";
+}
+
+.input-main .forgot {
+    text-align: right;
+    color: #313747;
+    margin: 10px 0 0 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: unset;
+    font-weight: 400;
+    display: block;
+}
+
+
+.form-check {
+    margin: 0;
+}
+
+.form-check .form-check-input:checked {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.form-check .form-check-input:focus {
+    border-color: #ff5722;
+    box-shadow: none;
+}
+
+.form-check .form-check-label {
+    letter-spacing: 1.5px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    color: #313747;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tox .tox-promotion {
+    display: none;
+}
+
+.tox:not([dir=rtl]) .tox-statusbar__branding {
+    display: none;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #D9D9D9;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: #ff5722;
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 30px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+/* toggle */
+/**************************** Form css End ***************************/
+
+/**************************** Header css Start ***************************/
+
+.header {
+    padding: 0rem;
+    z-index: 99;
+    padding-left: 17.5rem;
+    transition: all .2s ease;
+    background: #fff;
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 5%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .navbar {
+    padding: 0;
+    width: 100%;
+    background: #15283c;
+}
+
+.header .navbar .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+/* sidemenu start */
+.header .navbar button.toggle {
+    display: block;
+}
+
+.header .navbar button.toggle {
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.toggle span {
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle span:before,
+.toggle span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.toggle span:before {
+    top: -10px;
+}
+
+.toggle span:after {
+    top: 10px;
+}
+
+.toggle span.toggle {
+    background: transparent;
+}
+
+.toggle span.toggle:before {
+    top: 0;
+    transform: rotate(-45deg);
+    background: #fff;
+
+}
+
+.toggle span.toggle:after {
+    top: 0;
+    transform: rotate(45deg);
+    background: #fff;
+}
+
+/* sidemenu start */
+
+.header .navbar .navbar-brand {
+    margin: 0;
+}
+
+.header .navbar .main-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header .navbar .main-ul .spaces {
+    height: 4.5rem;
+}
+
+.header .navbar .main-ul .spaces ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header .navbar .main-ul .spaces ul .nav-item {
+    height: 100%;
+    background: #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.header .navbar .main-ul .spaces ul .nav-item.no-bg {
+    background: transparent;
+}
+
+.header .navbar .main-ul .spaces ul .nav-item .logo-top {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 60px;
+    max-height: 60px;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.header .navbar .profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.header .navbar .profile-box .main-img img {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.header .navbar .profile-box .info {
+    margin: 0 0 0 10px;
+}
+
+.header .navbar .profile-box .info h5 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar .profile-box .info p {
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar .nav-item .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+    display: inline-block;
+    color: #3f4358;
+    position: relative;
+    outline-width: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .navbar .nav-item .dropdown-menu .dropdown-item.active {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.header .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #ff5722;
+}
+
+.header .navbar .nav-item .dropdown-menu .dropdown-item i {
+    color: #ff5722;
+}
+
+.header .navbar .nav-item .dropdown-menu .dropdown-item.active i {
+    color: #fff;
+}
+
+.header .sub-header {
+    padding: 5px 40px;
+    height: 3rem;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    border-top: 1px solid #EEEEEE;
+}
+
+.header .sub-header .dashboard_bar {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+/**************************** Header css End ***************************/
+/*********************** sidebar Css start ***********************/
+.sidebar {
+    width: 17.5rem;
+    padding-bottom: 0;
+    height: calc(100% - 0px);
+    position: fixed;
+    top: 0;
+    padding-top: 0;
+    z-index: 999;
+    background-color: #15283c;
+    transition: all .2s ease;
+    box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 2%);
+    background-image: url(../images/sidebar.png);
+}
+
+.sidebar-scroll .nav-header {
+    height: 4.5rem;
+    background: #214162;
+}
+
+.sidebar-scroll .nav-header .brand-logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-right: 50px;
+    font-weight: 600;
+}
+
+.sidebar-scroll .nav-header .brand-logo img {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: auto;
+    max-height: fit-content;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.sidebar-scroll .main-profile {
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.sidebar-scroll .main-profile .image-bx {
+    position: relative;
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    margin-bottom: 12px;
+}
+
+.sidebar-scroll .main-profile .image-bx img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebar-scroll .main-profile .name {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-scroll .main-profile .name span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.sidebar-scroll .main-profile .email {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-scroll .metismenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25.5px 0 0 0;
+    gap: 10px;
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.sidebar-scroll .metismenu .nav-label {
+    margin: 10px 25px 0;
+    padding: 1.5625rem 0 10px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    border-top: 1px solid #ff5722;
+    color: #999999;
+}
+
+.sidebar-scroll .metismenu .nav-label.first {
+    border: 0px;
+    margin-top: 0px;
+}
+
+.sidebar-scroll .metismenu>li {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-scroll .metismenu li {
+    position: relative;
+}
+
+.sidebar-scroll .metismenu li a {
+    font-size: 14px;
+    padding: 15px 25px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    outline-width: 0;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    gap: 15.8px;
+}
+
+.sidebar-scroll .metismenu li a::before {
+    position: absolute;
+    content: "";
+    background: #ff5722;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sidebar-scroll .metismenu li a.active::before {
+    width: 6px;
+}
+
+.sidebar-scroll .metismenu li a.active {
+    background: #eb81531a;
+    color: #ff5722;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.sidebar-scroll .metismenu li a.active i {
+    color: #ff5722;
+}
+
+.sidebar-scroll .metismenu li a .nav-text {
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.sidebar-scroll .metismenu li a:hover .nav-text {
+    transform: translateX(10px);
+}
+
+.sidebar-scroll .metismenu>li:hover>a,
+.sidebar-scroll .metismenu>li:focus>a {
+    color: #ff5722;
+}
+
+.sidebar-scroll .metismenu>li:hover>a i,
+.sidebar-scroll .metismenu>li:focus>a i {
+    color: #ff5722;
+}
+
+.sidebar-scroll .metismenu li a i {
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    line-height: 1;
+}
+
+.sidebar-scroll .metismenu li .has-arrow:after {
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: inherit;
+    right: 1.5rem;
+    -webkit-transform: rotate(-225deg) translateY(-50%);
+    transform: rotate(-225deg) translateY(-50%);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    top: 48%;
+    transition: all .3s ease-out;
+}
+
+.sidebar-scroll .metismenu li .has-arrow[aria-expanded=true]:after {
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.sidebar-scroll .metismenu ul {
+    transition: all .2s ease-in-out;
+    position: relative;
+    z-index: 1;
+    padding: 0.5rem 0;
+}
+
+.sidebar-scroll .metismenu li .mydrop.show {
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #214162;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child {
+    font-size: 14px;
+    padding: 12px 0;
+    padding-left: 3.4rem;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    outline-width: 0;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child:before {
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border: 2px solid #fff;
+    content: "";
+    border-radius: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    left: 30px;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child:hover:before {
+    border: 2px solid #ff5722;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child.active {
+    background: #f5f5f5;
+    color: #ff5722;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child.active:before {
+    border: 2px solid #ff5722;
+}
+
+.sidebar-scroll .metismenu li .dropdown li .link-child:hover {
+    background: #f5f5f5;
+    color: #ff5722;
+}
+
+/*********************** sidebar css End ***********************/
+/*********************** Footer Css start ***********************/
+.footer {
+    padding-left: 17.5rem;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 5%);
+}
+
+.footer .copyright {
+    padding: 0.9375rem;
+}
+
+.footer .copyright p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3f4358;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer .copyright p a {
+    color: #ff5722;
+}
+
+/*********************** Footer Css End ***********************/
+/*********************** Main-Content start ***********************/
+.content-body {
+    margin-left: 17.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-color: #f7f7f7;
+    transition: all .2s ease;
+}
+
+.pad-cl {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5722;
+    transition: all .2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eb81531a;
+}
+
+.db-banner {
+    padding: 0.9375rem 1.875rem;
+    background: #fff;
+    margin-bottom: 1.875rem;
+    border-radius: 0.5rem;
+}
+
+.db-banner .welcom-text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff5722;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.db-banner .welcom-text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #7e7e7e;
+    font-family: 'Poppins', sans-serif;
+    text-transform: unset;
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+
+.db-banner .welcom-text ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.db-banner .welcom-text ul li {
+    font-size: 20px;
+    font-weight: 400;
+    color: #7e7e7e;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.db-banner .welcom-text ul li a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff5722;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.card-box {
+    margin: 70px 0 0 0;
+}
+
+.card-box .card-count {
+    display: flex;
+    align-items: center;
+    padding: 0 45px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0rem 0.3125rem 0.3125rem 0rem rgb(82 63 105 / 5%);
+    transition: all .5s ease-in-out;
+    margin: 0 0 50px 0;
+}
+
+.card-box .card-count:hover {
+    transform: translateY(-10px);
+}
+
+.card-box .card-count .main-img {
+    position: relative;
+    margin: -35px 0 0 0;
+    border-radius: 100%;
+    box-shadow: 0px 4px 2px 1px #523f6940;
+    width: 70px;
+    height: 70px;
+}
+
+.card-box .card-count .main-img img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.card-box .card-count .desc {
+    margin: 25px 0 0 0;
+}
+
+
+.card-box .card-count .desc h5 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card-box .card-count .desc h5 span {
+    color: #ff5722;
+}
+
+.card-box .card-count .desc h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #727272;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.chart-box {
+    padding: 0.9375rem 1.875rem;
+    background: #fff;
+    margin-bottom: 1.875rem;
+    border-radius: 0.5rem;
+    margin-top: 50px;
+}
+
+.sub-content {
+    padding: 2.9375rem 1.875rem;
+    background: #fff;
+    margin-bottom: 1.875rem;
+    border-radius: 0.5rem;
+    margin-top: 50px;
+}
+
+.sub-content h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Modal css */
+.modal .modal-content {
+    border: 1px solid #ff5722;
+}
+
+.modal .modal-content .modal-header {
+    border-bottom: none;
+}
+
+.modal .modal-content .modal-body h5 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Modal css */
+
+/* table css start */
+
+.main-table thead {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.main-table thead tr {
+    border-bottom: 1px solid #fff;
+}
+
+.main-table thead tr th {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 10px 20px;
+    border: none;
+}
+
+.main-table tbody tr {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.main-table tbody tr:last-child {
+    border-bottom: 1px solid #111;
+}
+
+.main-table tbody tr td .main-img .table-img {
+    min-width: 100px;
+    max-width: 100px;
+    object-fit: contain;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 10px;
+}
+
+.main-table tbody tr td h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3f4358;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.main-table tbody tr td .desc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3f4358;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.5px;
+    width: 300px;
+}
+
+.main-table tbody tr td {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3f4358;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 15px 20px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.main-table tbody tr td a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3f4358;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0 5px 0 0;
+    letter-spacing: 0;
+    vertical-align: middle;
+    transition: all .3s ease-in-out;
+}
+
+.main-table tbody tr td a:hover {
+    color: #ff5722;
+}
+
+.badge-success {
+    background-color: #68CF29;
+}
+
+.badge-primary {
+    background-color: #ff5722;
+}
+
+.badge-secondary {
+    background-color: #6418C3;
+}
+
+.page-item.disabled .page-link {
+    color: #ff5722;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #ff5722;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.page-item.active .page-link:focus {
+    box-shadow: none;
+}
+
+.page-item .page-link {
+    color: #ff5722;
+    border: 1px solid #ff5722;
+}
+
+.page-item .page-link:focus {
+    box-shadow: none;
+}
+
+.pagination .paginate_button {
+    margin: 0 5px 0 0;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #ff5722;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    border-color: #ff5722;
+    outline: 0;
+    box-shadow: none;
+}
+
+/* table css end */
+
+/* tabs css start */
+.nav-tabs .nav-link.active {
+    color: #ff5722;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.nav-tabs .nav-link.active::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #ff5722;
+    left: 0;
+}
+
+.nav-tabs .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 18px 15px;
+    position: relative;
+    margin: 0;
+    transition: all .5s ease-in-out;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #ff5722;
+}
+
+.tab-content .tab-pane .info-box {
+    padding: 50px 20px 20px;
+}
+
+.tab-content .tab-pane .info-box h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff5722;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.tab-content .tab-pane .info-box p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3f4358;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    opacity: 0.7;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+.tab-content .tab-pane .info-box ul li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3f4358;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    opacity: 0.7;
+    margin: 0 0 5px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tab-content .tab-pane .info-box ul li span {
+    display: block;
+    width: 150px;
+    color: #000;
+    font-weight: 700;
+    opacity: initial;
+}
+
+/* tabs css end */
+
+/* account-page css start */
+.account-sec-wrap {
+    padding: 200px 0;
+}
+
+.account-page {
+    background: #fff;
+    box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+    border-radius: 5px;
+    padding: 50px 50px;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.account-page h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* .account-page .account-img {}
+
+
+.account-page .account-img img {
+    min-width: 100px;
+    max-width: 100px;
+    object-fit: contain;
+    min-height: 80px;
+    max-height: 80px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+} */
+
+/* account-page css end */
+
+/*********************** Chat Css Start ***********************/
+.chat-main {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 5px 5px;
+    gap: 10px;
+    background: #eb81531a;
+}
+
+.chat-main .user-box {
+    width: 25%;
+}
+
+.chat-main .user-box .users-head {
+    margin: 0 0 20px 0;
+}
+
+.chat-main .user-box .users-head .from-group {
+    position: relative;
+}
+
+.chat-main .user-box .users-head .from-group .form-control {
+    padding: 0 0 0 35px;
+    height: 45px;
+}
+
+.chat-main .user-box .users-head .from-group span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+}
+
+.chat-main .user-box .users-head .from-group span i {
+    color: #ff5722;
+}
+
+.chat-main .user-box .user-list {
+    min-height: 560px;
+    max-height: 560px;
+    overflow-y: scroll;
+}
+
+.chat-main .user-box .user-list .user-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    box-shadow: 0px 0px 3px 1px #969ba07a;
+    padding: 5px 4px;
+    border-radius: 5px;
+    margin: 0 6px 10px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #fff;
+}
+
+.chat-main .user-box .user-list .user-card.active {
+    background: #ff5722;
+}
+
+.chat-main .user-box .user-list .user-card.active .info p {
+    color: #fff;
+}
+
+.chat-main .user-box .user-list .user-card:hover {
+    background: #ff5722;
+}
+
+.chat-main .user-box .user-list .user-card:hover .info p {
+    color: #fff;
+}
+
+.chat-main .user-box .user-list .user-card .main-img {
+    position: relative;
+}
+
+.chat-main .user-box .user-list .user-card .main-img img {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+.chat-main .user-box .user-list .user-card .main-img .active {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    background: #096401;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.chat-main .user-box .user-list .user-card .info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-main .user-box .user-list .user-card .info p {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chat-main .messages-box {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.chat-main .messages-box .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid #ff5722;
+}
+
+.chat-main .messages-box .head .user-plus-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.chat-main .messages-box .head .user-plus-icon .icon-back i {
+    color: #fff;
+    background: #ff5722;
+    padding: 10px 11px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    display: none;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chat-main .messages-box .head .user-plus-icon .icon-back i:hover {
+    border: 1px solid #ff5722;
+    background: transparent;
+    color: #ff5722;
+}
+
+.chat-main .messages-box .head .user-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 5px 4px;
+    margin: 0;
+}
+
+.chat-main .messages-box .head .user-card .main-img {
+    position: relative;
+}
+
+.chat-main .messages-box .head .user-card .main-img img {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+.chat-main .messages-box .head .user-card .main-img .active {
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
+    background: #096401;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.chat-main .messages-box .head .user-card .info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-main .messages-box .head .user-card .info p {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-toggle {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-toggle figure {
+    margin: 0;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-toggle figure i {
+    color: #000;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-menu {
+    right: 0;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-menu li .dropdown-item {
+    font-size: 16px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 400;
+    display: inline-block;
+    color: #3f4358;
+    position: relative;
+    outline-width: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-main .messages-box .head .user-action .dropdown .dropdown-menu li .dropdown-item.active {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.chat-main .messages-box .mesages-list {
+    width: 100%;
+    background: #fff;
+}
+
+.chat-main .messages-box .mesages-list ul {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 470px;
+    max-height: 470px;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-main .messages-box .mesages-list ul .sender {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px 0 5px 100px;
+}
+
+.chat-main .messages-box .mesages-list ul .sender .msg-desc img {
+    min-width: 210px;
+    max-width: 210px;
+    min-height: 180px;
+    max-height: 180px;
+    object-fit: fill;
+    object-position: top;
+    margin: 3px 0 0 0;
+}
+
+.chat-main .messages-box .mesages-list ul .sender .msg-desc p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 0 auto;
+    padding: 15px 15px;
+    letter-spacing: 0.5px;
+    background: #4b7bec;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+}
+
+.chat-main .messages-box .mesages-list ul .sender .msg-desc p::before {
+    position: absolute;
+    content: '';
+    right: 0px;
+    bottom: -8px;
+    background-image: url(../images/chat-arrow.png);
+    width: 15px;
+    height: 15px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.chat-main .messages-box .mesages-list ul .sender .msg-desc span {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.chat-main .messages-box .mesages-list ul .reciver {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5px 100px 5px 0;
+}
+
+.chat-main .messages-box .mesages-list ul .reciver .msg-desc img {
+    min-width: 210px;
+    max-width: 210px;
+    min-height: 180px;
+    max-height: 180px;
+    object-fit: fill;
+    object-position: top;
+    margin: 3px 0 0 0;
+}
+
+.chat-main .messages-box .mesages-list ul .reciver .msg-desc p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 15px 15px;
+    letter-spacing: 0.5px;
+    background: #f5f5f5;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+}
+
+.chat-main .messages-box .mesages-list ul .reciver .msg-desc p::before {
+    position: absolute;
+    content: '';
+    left: -9px;
+    top: -5px;
+    background-image: url(../images/chat-arrow-reciver.png);
+    width: 15px;
+    height: 15px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: rotate(133deg);
+}
+
+.chat-main .messages-box .mesages-list ul .reciver .msg-desc span {
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    color: #7e7e7e;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chat-main .messages-box .send-box {
+    width: 100%;
+    padding: 10px 10px;
+    border-top: 1px solid #ff5722;
+    background: #fff;
+}
+
+.chat-main .messages-box .send-box .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.chat-main .messages-box .send-box .form-group .upload-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    background: #ff5722;
+    color: #fff;
+    margin: 0;
+    padding: 0 15px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.chat-main .messages-box .send-box .form-group .upload-btn:hover {
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    background: transparent;
+}
+
+.chat-main .messages-box .send-box .form-group .btn-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #ff5722;
+    color: #fff;
+    margin: 0;
+    padding: 0 20px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chat-main .messages-box .send-box .form-group .btn-send:hover {
+    border: 1px solid #ff5722;
+    color: #ff5722;
+    background: transparent;
+}
+
+.chat-main .messages-box .send-box .file-attatch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    display: none;
+}
+
+/* image css start */
+.chat-main .messages-box .send-box .file-attatch .image-input {
+    box-sizing: border-box;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: whitesmoke;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 10px 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input::before {
+    content: "";
+    background-image: url(../images/upload.PNG);
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 25px;
+    top: 24px;
+    opacity: 0.3;
+    transition: opacity 200ms;
+    transform: translate(0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input input[type=file] {
+    opacity: 0;
+    display: block;
+    height: 100px;
+    pointer-events: none;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input img {
+    position: absolute;
+    display: block;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 200ms;
+    opacity: 1;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    background: white;
+    z-index: 1;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input img[src=""] {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input .image-remove {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 1;
+    border: none;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input .image-remove::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12px;
+    background: #333;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input .image-remove::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12px;
+    background: #333;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input .image-remove::before {
+    transform: rotate(45deg);
+}
+
+.chat-main .messages-box .send-box .file-attatch .image-input .image-remove::after {
+    transform: rotate(-45deg);
+}
+
+/* image css start */
+
+/*********************** Chat Css End ***********************/
+
+/*********************** Main-Content close ***********************/
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {}
+
+@media only screen and (min-width: 1366px) and (max-width: 1444px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        background-color: #fff;
+    }
+
+    .sub-content {
+        padding: 2.9375rem 0.3rem;
+    }
+
+    /* main-content css end */
+    /* chat responsive css start */
+    .chat-main {
+        margin: 0 50px;
+    }
+
+    .chat-main .user-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chat-main .messages-box {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    /* .chat-main .user-box .user-list{
+        min-height: auto;
+    } */
+
+    .chat-main .messages-box .head .user-plus-icon .icon-back i {
+        padding: 5px 5px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .chat-main .messages-box .head .user-card .main-img img {
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .chat-main .messages-box .head .user-card .info h4 {
+        font-size: 14px;
+    }
+
+    .chat-main .messages-box .head .user-card .info p {
+        font-size: 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul {
+        padding: 10px 5px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver {
+        margin: 5px 20px 5px 0;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender {
+        margin: 5px 0 5px 20px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    /* chat responsive css end */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 519px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .db-banner .welcom-text h4 {
+        text-align: center;
+    }
+
+    .db-banner .welcom-text p {
+        text-align: center;
+    }
+
+    .db-banner .welcom-text ul {
+        justify-content: center;
+    }
+
+    .footer {
+        padding-left: 10px;
+        background-color: #fff;
+    }
+
+    .sub-content {
+        padding: 2.9375rem 0.3rem;
+    }
+
+    /* main-content css end */
+
+    /* chat responsive css start */
+    .chat-main .user-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chat-main .messages-box {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    /* .chat-main .user-box .user-list{
+        min-height: auto;
+    } */
+
+    .chat-main .messages-box .head .user-plus-icon .icon-back i {
+        padding: 5px 5px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .chat-main .messages-box .head .user-card .main-img img {
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .chat-main .messages-box .head .user-card .info h4 {
+        font-size: 14px;
+    }
+
+    .chat-main .messages-box .head .user-card .info p {
+        font-size: 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul {
+        padding: 10px 5px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver {
+        margin: 5px 20px 5px 0;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender {
+        margin: 5px 0 5px 20px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    /* chat responsive css end */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+    .short-icons {
+        width: 7.5rem;
+    }
+
+    .short-icons .sidebar-scroll .nav-header .brand-logo {
+        font-size: 15px;
+    }
+
+    .short-icons .sidebar-scroll .metismenu li a {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .short-icons .sidebar-scroll .metismenu li a:hover .nav-text {
+        transform: translateX(0px);
+    }
+
+    .short-bar-footer,
+    .short-bar-header {
+        padding-left: 7.5rem;
+    }
+
+    .short-bar-body {
+        margin-left: 7.5rem;
+    }
+
+    .short-icons .nav-header .brand-logo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .short-icons .metismenu .nav-label {
+        margin: 0;
+        padding: 0.5625rem 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .short-icons .main-profile .name,
+    .short-icons .main-profile .email,
+    .short-icons .metismenu li .has-arrow:after {
+        display: none;
+    }
+
+    .short-icons .metismenu li .dropdown li .link-child {
+        font-size: 12px;
+        padding: 12px 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* main-content css end */
+}
