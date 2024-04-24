@@ -13,7 +13,14 @@
 <body>
 
     @include('web.layouts.header')
-        @yield('content')
+    <main class="drake-main">
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+                @include('web.layouts.sidebar')
+                @yield('content')
+            </div>
+        </div>
+    </main>
     @include('web.layouts.footer')
 
     @include('web.layouts.scripts')

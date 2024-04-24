@@ -1,0 +1,403 @@
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+}
+
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1444px) {
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footer {
+        padding-left: 10px;
+        background-color: #fff;
+    }
+
+    .sub-content {
+        padding: 2.9375rem 0.3rem;
+    }
+
+    /* main-content css end */
+    /* chat responsive css start */
+    .chat-main {
+        margin: 0 50px;
+    }
+
+    .chat-main .user-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chat-main .messages-box {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    /* .chat-main .user-box .user-list{
+        min-height: auto;
+    } */
+
+    .chat-main .messages-box .head .user-plus-icon .icon-back i {
+        padding: 5px 5px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .chat-main .messages-box .head .user-card .main-img img {
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .chat-main .messages-box .head .user-card .info h4 {
+        font-size: 14px;
+    }
+
+    .chat-main .messages-box .head .user-card .info p {
+        font-size: 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul {
+        padding: 10px 5px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver {
+        margin: 5px 20px 5px 0;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender {
+        margin: 5px 0 5px 20px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    /* chat responsive css end */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 519px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .db-banner .welcom-text h4 {
+        text-align: center;
+    }
+
+    .db-banner .welcom-text p {
+        text-align: center;
+    }
+
+    .db-banner .welcom-text ul {
+        justify-content: center;
+    }
+
+    .footer {
+        padding-left: 10px;
+        background-color: #fff;
+    }
+
+    .sub-content {
+        padding: 2.9375rem 0.3rem;
+    }
+
+    /* main-content css end */
+
+    /* chat responsive css start */
+    .chat-main .user-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .chat-main .messages-box {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    /* .chat-main .user-box .user-list{
+        min-height: auto;
+    } */
+
+    .chat-main .messages-box .head .user-plus-icon .icon-back i {
+        padding: 5px 5px;
+        font-size: 12px;
+        display: block;
+    }
+
+    .chat-main .messages-box .head .user-card .main-img img {
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+
+    .chat-main .messages-box .head .user-card .info h4 {
+        font-size: 14px;
+    }
+
+    .chat-main .messages-box .head .user-card .info p {
+        font-size: 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul {
+        padding: 10px 5px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver {
+        margin: 5px 20px 5px 0;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender {
+        margin: 5px 0 5px 20px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc img {
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        margin: 3px 0 0 auto;
+    }
+
+    .chat-main .messages-box .mesages-list ul .sender .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    .chat-main .messages-box .mesages-list ul .reciver .msg-desc p {
+        font-size: 12px;
+        margin: 0 0 0 auto;
+        padding: 8px 10px;
+    }
+
+    /* chat responsive css end */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1920px) {
+    .short-icons {
+        width: 7.5rem;
+    }
+
+    .short-icons .sidebar-scroll .nav-header .brand-logo {
+        font-size: 15px;
+    }
+
+    .short-icons .sidebar-scroll .metismenu li a {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .short-icons .sidebar-scroll .metismenu li a:hover .nav-text {
+        transform: translateX(0px);
+    }
+
+    .short-bar-footer,
+    .short-bar-header {
+        padding-left: 7.5rem;
+    }
+
+    .short-bar-body {
+        margin-left: 7.5rem;
+    }
+
+    .short-icons .nav-header .brand-logo {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .short-icons .metismenu .nav-label {
+        margin: 0;
+        padding: 0.5625rem 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .short-icons .main-profile .name,
+    .short-icons .main-profile .email,
+    .short-icons .metismenu li .has-arrow:after {
+        display: none;
+    }
+
+    .short-icons .metismenu li .dropdown li .link-child {
+        font-size: 12px;
+        padding: 12px 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+    .header {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .header .navbar .profile-box {
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        border-left: none;
+    }
+
+    .header .navbar .profile-box .info {
+        display: none;
+    }
+
+    .sidebar {
+        height: calc(100% - 60px);
+        top: 4.6rem;
+        left: -290px;
+    }
+
+    .sidebarshow {
+        left: 0;
+    }
+
+    .sidebar-scroll .nav-header {
+        display: none;
+    }
+
+    /* main-content css start */
+    .content-body {
+        margin-left: 0;
+        min-height: auto !important;
+    }
+
+    .pad-cl {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* main-content css end */
+}

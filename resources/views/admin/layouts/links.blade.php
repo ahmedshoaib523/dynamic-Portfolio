@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="{{ asset('assets/admin/css/owl.carousel.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/admin/css/owl.theme.default.min.css') }}">
 <link href="{{ asset('assets/admin/css/custom.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('assets/admin/css/responsive.css') }}" rel="stylesheet" type="text/css">
 <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 <link href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.css" rel="stylesheet" />

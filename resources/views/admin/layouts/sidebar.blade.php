@@ -17,7 +17,7 @@
         </div>
         <ul class="metismenu" id="menu">
             <li class="nav-label first">Main Menu</li>
-            <li>
+            {{-- <li>
                 <a class="has-arrow ai-icon" data-bs-toggle="collapse" href="javascript:;" aria-expanded="false">
                     <i class="fa-regular fa-house-user"></i>
                     <span class="nav-text">Dashboard</span>
@@ -27,7 +27,7 @@
                     <li><a href="javascirpt:;" class="link-child">Page 2</a></li>
                     <li><a href="javascirpt:;" class="link-child">Page 3</a></li>
                 </ul>
-            </li>
+            </li> --}}
 
             <li>
                 <a class="ai-icon" href="{{ route('admin.home') }}">
@@ -55,33 +55,6 @@
             </li>
 
             <li class="nav-label">Form</li>
-            <li>
-                <a class="ai-icon" href="form.php">
-                    <i class="fa-regular fa-house-user"></i>
-                    <span class="nav-text">Form</span>
-                </a>
-            </li>
-            <li class="nav-label">Table</li>
-            <li>
-                <a class="ai-icon" href="table.php">
-                    <i class="fa-regular fa-house-user"></i>
-                    <span class="nav-text">Table</span>
-                </a>
-            </li>
-            <li class="nav-label">Order</li>
-            <li>
-                <a class="ai-icon" href="order.php">
-                    <i class="fa-regular fa-house-user"></i>
-                    <span class="nav-text">Order</span>
-                </a>
-            </li>
-            <li class="nav-label">chat</li>
-            <li>
-                <a class="ai-icon" href="chat.php">
-                    <i class="fa-regular fa-house-user"></i>
-                    <span class="nav-text">Chat</span>
-                </a>
-            </li>
         </ul>
     </div>
 </div>
