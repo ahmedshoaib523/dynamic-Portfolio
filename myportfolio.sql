@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 09:47 PM
+-- Generation Time: Jun 03, 2024 at 09:46 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dummy_db`
+-- Database: `myportfolio`
 --
 
 -- --------------------------------------------------------
@@ -90,9 +90,9 @@ CREATE TABLE `logo` (
 --
 
 INSERT INTO `logo` (`id`, `name`, `slug`, `value`, `tag`, `is_active`, `is_deleted`, `created_at`, `updated_at`) VALUES
-(1, 'logo dark', 'logo_dark', 'uploads/logo/logo-holistic_1712954812.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-12 15:46:52'),
-(2, 'Logo light', 'logo_light', 'uploads/logo/light_1712952263.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-12 15:04:23'),
-(3, 'Favicon', 'favicon', 'uploads/logo/logo-holistic_1712952263.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-12 15:04:23');
+(1, 'logo dark', 'logo_dark', 'uploads/logo/logo_1713916268.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-23 18:51:08'),
+(2, 'Logo light', 'logo_light', 'uploads/logo/logo_1713916246.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-23 18:50:46'),
+(3, 'Favicon', 'favicon', 'uploads/logo/favicon_1713916235.png', 'logo_fav', 1, 0, '2024-04-12 19:37:36', '2024-04-23 18:50:35');
 
 -- --------------------------------------------------------
 
