@@ -1,4 +1,4 @@
-/* 
+/*
     -- Table of Content --
 
     * 01 - Menu
@@ -1025,6 +1025,14 @@ body .body-overlay {
     margin-bottom: 5px;
     color: #fff;
     text-transform: uppercase;
+}
+.resume-area .resume-content .resume-timeline .item h3{
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #ededed;
+    text-transform: capitalize;
 }
 
 .resume-area .resume-content .resume-timeline .item h2 a {

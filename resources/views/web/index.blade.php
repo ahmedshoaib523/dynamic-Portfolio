@@ -5,14 +5,14 @@
             <div class="hero-content content-width">
                 <div class="section-header">
                     <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                        <i class="fa-regular fa-home"></i> Introduce
+                        <i class="fa-regular fa-home"></i> Welcome
                     </h4>
-                    <h1 class="scroll-animation" data-animation="fade_from_bottom">Say Hi from
-                        <span>Ahmed Shoaib</span>, Front-End and Back-End Developer
+                    <h1 class="scroll-animation" data-animation="fade_from_bottom">Greetings from
+                        <span>Ahmed Shoaib</span>, Your Front-End & Back-End Developer
                     </h1>
                 </div>
-                <p class="scroll-animation" data-animation="fade_from_bottom">I design and code beautifully
-                    simple things and i love what i do. Just simple like that!</p>
+                <p class="scroll-animation" data-animation="fade_from_bottom">I design and develop beautifully
+                    simple solutions, and I love what I do. It's as simple as that!</p>
                 <a href="#portfolio" class="go-to-project-btn scroll-to scroll-animation" data-animation="rotate_up">
                     <img src="{{ asset('assets/web/images/round-text.png') }}" alt="Rounded Text">
                     <i class="fa-regular fa-arrow-down"></i>
@@ -37,18 +37,14 @@
             <div class="about-content content-width">
                 <div class="section-header">
                     <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                        <i class="fa-regular fa-user"></i> About
+                        <i class="fa-regular fa-user"></i> About Me
                     </h4>
-                    <h1 class="scroll-animation" data-animation="fade_from_bottom">Every great design begin
+                    <h1 class="scroll-animation" data-animation="fade_from_bottom">Every great design begins
                         with<br>
                         an even <span>better story</span></h1>
                 </div>
-                <p class="scroll-animation" data-animation="fade_from_bottom">Since beginning my journey as
-                    a freelance designer nearly 8 years ago,
-                    I've done remote work for agencies, consulted for startups, and collaborated with
-                    talented people to create digital products for both business and consumer use.
-                    I'm quietly confident, naturally curious, and perpetually working on improving my
-                    chopsone design problem at a time.</p>
+                <p class="scroll-animation" data-animation="fade_from_bottom">Since starting my journey as
+                    a freelance designer nearly 3 years ago, I’ve worked remotely with agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and continually working on enhancing my skills, tackling one design challenge at a time.</p>
             </div>
         </div>
     </section>
@@ -69,18 +65,16 @@
                 <div class="resume-timeline">
                     <div class="item scroll-animation" data-animation="fade_from_right">
                         <span class="date">2022 - Present</span>
-                        <h2>Developer At</h2>
-                        <p>Sybex Lab</p>
-                        <h2>Front-End Development</h2>
-                        <p>Html5, Bootstrap, CSS3, Javascript, Jquerry, WordPress.</p>
-                        <h2>Back-End Development</h2>
-                        <p>Php, Laravel, MySql</p>
-                        <p>ASP.Net MVC, Sql</p>
+                        <h2>Developer at Sybex Lab</h2>
+                        <h3>Front-End Development</h3>
+                        <p>HTML5, Bootstrap, CSS3, JavaScript, jQuery, WordPress</p>
+                        <h3>Back-End Development</h3>
+                        <p>PHP, Laravel, MySQL, ASP.NET MVC, SQL</p>
                     </div>
                     <div class="item scroll-animation" data-animation="fade_from_right">
-                        <span class="date">2021 - Present</span>
-                        <h2>HIGHER DIPLOMA IN SOFTWARE ENGINEERING</h2>
-                        <p>Aptech Star Gate Karachi</p>
+                        <span class="date">2021 - 2024</span>
+                        <h2>Higher Diploma in Software Engineering</h2>
+                        <p>Aptech Star Gate, Karachi</p>
                     </div>
                     <div class="item scroll-animation" data-animation="fade_from_right">
                         <span class="date">2017 - 2019</span>
@@ -112,9 +106,21 @@
                 <div class="services-items">
                     <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                         <i class="fa-regular fa-code"></i>
-                        <h2>Development</h2>
-                        <p>I build website go live with Framer, Webflow or WordPress</p>
-                        <span class="projects">100+ Projects</span>
+                        <h2>Web Development</h2>
+                        <p>I create and launch websites using Framer, Webflow, or WordPress, ensuring they are fully functional and visually appealing.</p>
+                        <span class="projects">100+ Projects Completed</span>
+                    </div>
+                    <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                        <i class="fa-regular fa-paint-brush"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>I design user interfaces and user experiences that are both beautiful and intuitive, enhancing user satisfaction and engagement.</p>
+                        <span class="projects">50+ Projects Designed</span>
+                    </div>
+                    <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                        <i class="fa-regular fa-database"></i>
+                        <h2>Backend Development</h2>
+                        <p>I develop robust back-end solutions using PHP, Laravel, and MySQL, ensuring your website operates smoothly and efficiently.</p>
+                        <span class="projects">30+ Backend Solutions Implemented</span>
                     </div>
                 </div>
             </div>
@@ -156,7 +162,7 @@
                         <div class="skill">
                             <div class="skill-inner">
                                 <img src="{{ asset('assets/web/images/webflow.png') }}" alt="Webflow">
-                                <h1 class="percent">50%</h1>
+                                <h1 class="percent">70%</h1>
                             </div>
                             <p class="name">Javascript</p>
                         </div>
@@ -165,7 +171,7 @@
                         <div class="skill">
                             <div class="skill-inner">
                                 <img src="{{ asset('assets/web/images/laravel.png') }}" alt="Laravel/PHP">
-                                <h1 class="percent">50%</h1>
+                                <h1 class="percent">85%</h1>
                             </div>
                             <p class="name">Laravel/PHP</p>
                         </div>
@@ -174,7 +180,7 @@
                         <div class="skill">
                             <div class="skill-inner">
                                 <img src="{{ asset('assets/web/images/wordpress.png') }}" alt="WordPress">
-                                <h1 class="percent">30%</h1>
+                                <h1 class="percent">60%</h1>
                             </div>
                             <p class="name">ASP.Net MVC</p>
                         </div>
@@ -183,7 +189,7 @@
                         <div class="skill">
                             <div class="skill-inner">
                                 <img src="{{ asset('assets/web/images/wordpress.png') }}" alt="WordPress">
-                                <h1 class="percent">50%</h1>
+                                <h1 class="percent">70%</h1>
                             </div>
                             <p class="name">WordPress</p>
                         </div>
